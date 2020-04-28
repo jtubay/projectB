@@ -1,0 +1,29 @@
+{
+  "name": "projectBakery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jtubay/projectB.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jtubay/projectB/issues"
+  },
+  "homepage": "https://github.com/jtubay/projectB#readme",
+  "dependencies": {
+    "ejs": "^3.1.2",
+    "express": "^4.17.1",
+    "stripe": "^8.47.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
