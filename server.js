@@ -38,7 +38,19 @@ app.post('/charge', (req, res) => {
       customer: customer.id
     }))
     .then(charge => res.render('purchase.ejs'));
-  });
+});
+app.get('/store', (req, res) => {
+    fs.readFile('items.json', (error, data) => {
+        if(error){
+            res.status(500).end()
+        }else{
+            res.render('store.ejs', {
+                stripePublicKey,
+                items: JSON.parse(data)
+            })
+        }
+    })
+})
 
 
 app.listen(PORT, () => console.log(`SERVER STARTED AT https://http://localhost:${PORT}`))
