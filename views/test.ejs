@@ -1,1 +1,18 @@
-<h1>test</h1>
+<form action="/charge" method="POST">
+            <script
+                src="https://checkout.stripe.com/checkout.js"
+                class="stripe-button"
+                data-key="pk_test_QNXm0ERPRBeQVkp05DCczQuu002ANg2T8F"
+                data-amount="2500"
+                data-name="Traversity Media"
+                data-description="By Jean"
+                data-image="/img/marketplace.png"
+                data-locale="auto"
+            
+            ></script>
+            <script>
+                //Hide default strip button
+                document.getElementsByClassName('stripe-button-el')[0].style.display = 'none';
+            </script>
+            <button type="submit" class="btn btn-outline-dark text-white btn-lg">Purchase For $25</button>
+        </form>
