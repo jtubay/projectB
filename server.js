@@ -17,35 +17,35 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static('public'));
 
-app.get('/', (req, res) => {
-    res.render('store.ejs')
-});
+// app.get('/', (req, res) => {
+//     res.render('store.ejs')
+// });
 
-app.get('/test', (req, res) => {
-    res.render('test.ejs')
-});
-app.post('/charge', (req, res) => {
-    const amount = 5500;
+// app.get('/test', (req, res) => {
+//     res.render('test.ejs')
+// });
+// app.post('/charge', (req, res) => {
+//     const amount = 5500;
     
-    stripe.customers.create({
-      email: req.body.stripeEmail,
-      source: req.body.stripeToken
-    })
-    .then(customer => stripe.charges.create({
-      amount,
-      description: 'Web Development Ebook',
-      currency: 'usd',
-      customer: customer.id
-    }))
-    .then(charge => res.render('purchase.ejs'));
-});
+//     stripe.customers.create({
+//       email: req.body.stripeEmail,
+//       source: req.body.stripeToken
+//     })
+//     .then(customer => stripe.charges.create({
+//       amount,
+//       description: 'Web Development Ebook',
+//       currency: 'usd',
+//       customer: customer.id
+//     }))
+//     .then(charge => res.render('purchase.ejs'));
+// });
 app.get('/store', (req, res) => {
     fs.readFile('items.json', (error, data) => {
         if(error){
             res.status(500).end()
         }else{
             res.render('store.ejs', {
-                stripePublicKey,
+                stripePublicKey: stripePublicKey,
                 items: JSON.parse(data)
             })
         }
