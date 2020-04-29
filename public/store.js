@@ -1,7 +1,17 @@
 const removeCartItemButtons = document.getElementsByClassName('btn-danger');
 const quantityInputs = document.getElementsByClassName('btn-danger');
 const addToCartBtn = document.getElementsByClassName('shop-item-button');
+document.getElementsByClassName('btn-purchse')[0].addEventListener('click',purchaseClicked);
 
+
+const purchaseClicked = () => {
+    alert('Thank you for your purchase')
+    const cartItems = document.getElementsByClassName('cart-items')[0];
+    while(cartItems.hasChildNodes()){
+        cartItems.removeChild(cartItems.firstChild)
+    }
+    updateCartTotal()
+}
 
 const removeCartItem = e => {
     const btnClicked = e.target
@@ -39,6 +49,8 @@ const addItemToCart = (title, price, imageSrc) => {
         </div>`
     cartRow.innerHTML = cartRowContents;
     cartItems.append(cartRow);
+    cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem);
+    cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged)
 }
 
 const addToCartClicked = e =>{
@@ -77,7 +89,7 @@ const updateCartTotal = () => {
         let cartRow = cartRows[i];
         const priceElement = cartRow.getElementsByClassName('cart-price')[0];
         const quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0];
-        const price = parseFloat(priceElement.innerText.replacd('$', ''));
+        const price = parseFloat(priceElement.innerText.replace('$', ''));
         const quantity = quantityElement.value;
         total = total + (price * quantity);
 
