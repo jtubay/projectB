@@ -4,28 +4,28 @@
             "id": 1,
             "name": "Tre leches",
             "price": 3099,
-            "imgName": "Album 1.png",
+            "imgName": "image4.jpeg",
             "description": "test"
         },
         {
             "id": 2,
             "name": "Album 2",
             "price": 1499,
-            "imgName": "Album 2.png",
+            "imgName": "image7.jpeg",
             "description": "test"
         },
         {
             "id": 3,
             "name": "Album 3",
             "price": 999,
-            "imgName": "Album 3.png",
+            "imgName": "image3.jpeg",
             "description": "test"
         },
         {
             "id": 4,
             "name": "Album 4",
             "price": 1999,
-            "imgName": "Album 4.png",
+            "imgName": "image10.jpeg",
             "description": "test"
         }
     ],

@@ -9,3 +9,8 @@
 .btn-danger:hover {
     background-color: #CC4C4C;
 }
+
+.shop-item-image{
+    height: 20rem;
+    width: 15rem;
+}
