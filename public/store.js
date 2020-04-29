@@ -1,17 +1,65 @@
+
 const removeCartItemButtons = document.getElementsByClassName('btn-danger');
 const quantityInputs = document.getElementsByClassName('btn-danger');
 const addToCartBtn = document.getElementsByClassName('shop-item-button');
-document.getElementsByClassName('btn-purchse')[0].addEventListener('click',purchaseClicked);
 
 
-const purchaseClicked = () => {
-    alert('Thank you for your purchase')
-    const cartItems = document.getElementsByClassName('cart-items')[0];
-    while(cartItems.hasChildNodes()){
-        cartItems.removeChild(cartItems.firstChild)
+const stripeHandler = StripeCheckout.configure({
+    key: stripePublicKey,
+    locale: 'en',
+    token: (token) => {
+        const items = [];
+        const cartItemContainer = document.getElementsByClassName('cart-items')[0];
+        const cartRows = cartItemContainer.getElementsByClassName('cart-row');
+        for(let i =0; i < cartRows.length; i++){
+            let cartRow = cartRows[i];
+            const quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0];
+            const quantity = quantityElement.value;
+            const id = cartRow.dataset.itemId;
+            items.push({
+                id,
+                quantity
+            })
+        }
+        fetch('/purchase', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify({
+                stripeTokenId: token.id,
+                items
+            })
+        }).then((res)=>{
+            return res.json()
+        }).then((data) => {
+            alert(data.message)
+            var cartItems = document.getElementsByClassName('cart-items')[0]
+            while (cartItems.hasChildNodes()) {
+                cartItems.removeChild(cartItems.firstChild)
+            }
+            updateCartTotal()
+        }).catch((error) =>{
+            console.error(error);
+        })
+
+        
     }
-    updateCartTotal()
+})
+
+
+
+function purchaseClicked() {
+    // alert('Thank you for your purchase')
+
+    const priceElement = document.getElementsByClassName('cart-total-price')[0];
+    const price = parseFloat(priceElement.innerText.replace("$", "")) * 100;
+    stripeHandler.open({
+        amount: price
+    })
 }
+document.getElementsByClassName('btn-purchase')[0].addEventListener('click',purchaseClicked);
 
 const removeCartItem = e => {
     const btnClicked = e.target
@@ -26,9 +74,11 @@ const quantityChanged = e => {
     updateCartTotal()
 
 }
-const addItemToCart = (title, price, imageSrc) => {
+const addItemToCart = (title, price, imageSrc, id) => {
     const cartRow = document.createElement('div');
     cartRow.classList.add('cart-row');
+    cartRow.dataset.itemId = id;
+
     const cartItems = document.getElementsByClassName('cart-items')[0];
     const cartItemNames = cartItems.getElementsByClassName('cart-item-title');
     for(let i = 0; i < cartItemNames.length; i++){
@@ -59,9 +109,10 @@ const addToCartClicked = e =>{
     const title = shopItem.getElementsByClassName('shop-item-title')[0].innerText;
     const price = shopItem.getElementsByClassName('shop-item-price')[0].innerText;
     const imageSrc = shopItem.getElementsByClassName('shop-item-image')[0].src;
-    console.log(title, price, imageSrc);
-    addItemToCart(title, price, imageSrc);
-    updateCartTotal();
+    
+    const id = shopItem.dataset.itemId
+    addItemToCart(title, price, imageSrc, id)
+    updateCartTotal()
 }
 
 
