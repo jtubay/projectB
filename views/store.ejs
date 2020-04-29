@@ -48,19 +48,23 @@
 
 
     <section class="container content-section">
-        <h2 class="section-header">Music</h2>
-        <div class="shop-items">
-            <% items.music.forEach((item) => { %>
-                <div class="shop-item" data-item-id="<%= item.id %>">
-                    <span class="shop-item-title"><%= item.name %></span>
-                    <span class="shop-item-title"><%= item.description %></span>
-                    <img class="shop-item-image" src="Images/<%= item.imgName %>">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">$<%= item.price / 100 %></span>
-                        <button class="btn btn-primary shop-item-button" type="button">Add to cart</button>
+        <h2 class="section-header">Cakes</h2>
+        <div class="wrapper">
+            <div class="shop-items">
+                <% items.music.forEach((item) => { %>
+                    <div class="shop-item" data-item-id="<%= item.id %>">
+                        <div class="item-overlay">
+                            <span class="shop-item-title"><%= item.name %></span>
+                            <span class="shop-item-description"><%= item.description %></span>
+                        </div>
+                        <img class="shop-item-image" src="Images/<%= item.imgName %>">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">$<%= item.price / 100 %></span>
+                            <button class="btn btn-primary shop-item-button" type="button">Add to cart</button>
+                        </div>
                     </div>
-                </div>
-            <%})%>
+                <%})%>
+            </div>
         </div>
     </section>
 
@@ -100,8 +104,7 @@
 
 
     <script src="https://checkout.stripe.com/checkout.js"></script>
-    <script>
-        const stripePublicKey = '<%= stripePublicKey %>'
+   
     </script>
     <script src="store.js"></script> 
 </body>

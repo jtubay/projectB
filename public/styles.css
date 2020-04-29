@@ -14,7 +14,24 @@
     height: 20rem;
     width: 15rem;
 }
-.fal fa-phone-rotary{
-    color: black;
-    height: 50rem;
+
+
+.shop-item{
+    background-color:black;
+    width: 27rem;
+    height: 27rem;
+    margin-top: 5rem;
+    padding-top: 3rem;
 }
+
+.shop-items{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.wrapper{
+    width: 100%;
