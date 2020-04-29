@@ -5,11 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bake</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="https://checkout.stripe.com/checkout.js" defer></script>
-    <script>
-        const stripePublicKey = '<%= stripePublicKey %>'
-    </script>
-    <script src="store.js" defer></script>
 </head>
 <body>
     <section class="container content-section">
@@ -60,6 +55,13 @@
             </div>
             <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
      </section>
-    
+
+
+
+    <script src="https://checkout.stripe.com/checkout.js"></script>
+    <script>
+        const stripePublicKey = '<%= stripePublicKey %>'
+    </script>
+    <script src="store.js"></script> 
 </body>
 </html>
