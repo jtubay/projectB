@@ -1,3 +1,14 @@
+.landing{
+    height: 100vh;
+    width: 100%;
+    background:black;
+}
+.content-wrapper {
+    background-color: rgb(238, 238, 238);
+    width: 100%!important;
+    height: 63rem!important;
+}
+
 .btn-danger {
     color: white;
     background-color: #EB5757;
@@ -10,18 +21,32 @@
     background-color: #CC4C4C;
 }
 
+.item-overlay{
+    background-color: black;
+    position: absolute;
+    width: 24rem;
+    height: 19rem;
+    opacity: 0;
+    color:white;
+    transition: 200ms ease-in-out all;
+    display: flex;
+    justify-content: center;
+}
+
+.item-overlay:hover{
+    opacity: .6;
+}
 .shop-item-image{
-    height: 20rem;
-    width: 15rem;
+    height: 19rem;
+    width: 24rem;
 }
 
 
 .shop-item{
-    background-color:black;
-    width: 27rem;
-    height: 27rem;
+    background-color:rgb(255, 255, 255);
+    width: 24rem;
+    height: 23rem;
     margin-top: 5rem;
-    padding-top: 3rem;
 }
 
 .shop-items{

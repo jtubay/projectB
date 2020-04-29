@@ -44,46 +44,48 @@
             </div>
         </nav>
         <!--End Nav-->
-
-
-
-    <section class="container content-section">
-        <h2 class="section-header">Cakes</h2>
-        <div class="wrapper">
+    <!--Landing-->
+    <div class="landing">
+        
+    </div>
+    <section class="container content-section content-wrapper">
+            <div class="text-center">
+                <h2 class="section-header">Cakes</h2>
+            </div>
+            <div class="wrapper">
+                <div class="shop-items">
+                    <% items.music.forEach((item) => { %>
+                        <div class="shop-item" data-item-id="<%= item.id %>">
+                            <div class="item-overlay">
+                                <span class="shop-item-description"><%= item.description %></span>
+                            </div>
+                            <img class="shop-item-image" src="Images/<%= item.imgName %>">
+                            <div class="shop-item-details">
+                                <span class="shop-item-title"><%= item.name %></span>
+                                <span class="shop-item-price">$<%= item.price / 100 %></span>
+                                <button class="btn btn-primary shop-item-button" type="button">Add to cart</button>
+                            </div>
+                        </div>
+                    <%})%>
+                </div>
+            </div>
+        </section>
+    
+        <section class="container content-section">
+            <h2 class="section-header">MERCH</h2>
             <div class="shop-items">
-                <% items.music.forEach((item) => { %>
+                <% items.merch.forEach(item => { %>
                     <div class="shop-item" data-item-id="<%= item.id %>">
-                        <div class="item-overlay">
-                            <span class="shop-item-title"><%= item.name %></span>
-                            <span class="shop-item-description"><%= item.description %></span>
-                        </div>
-                        <img class="shop-item-image" src="Images/<%= item.imgName %>">
-                        <div class="shop-item-details">
-                            <span class="shop-item-price">$<%= item.price / 100 %></span>
-                            <button class="btn btn-primary shop-item-button" type="button">Add to cart</button>
-                        </div>
+                        <span class="shop-item-title"><%= item.name %></span>
+                            <img class="shop-item-image" src="Images/<%= item.imgName %>">
+                            <div class="shop-item-details">
+                                <span class="shop-item-price">$<%= item.price / 100 %></span>
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                            </div>
                     </div>
                 <%})%>
             </div>
-        </div>
-    </section>
-
-    <section class="container content-section">
-        <h2 class="section-header">MERCH</h2>
-        <div class="shop-items">
-            <% items.merch.forEach(item => { %>
-                <div class="shop-item" data-item-id="<%= item.id %>">
-                    <span class="shop-item-title"><%= item.name %></span>
-                        <img class="shop-item-image" src="Images/<%= item.imgName %>">
-                        <div class="shop-item-details">
-                            <span class="shop-item-price">$<%= item.price / 100 %></span>
-                            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                        </div>
-                </div>
-            <%})%>
-        </div>
-    
-    </section>
+        </section>
     
      <section class="container content-section">
             <h2 class="section-header">CART</h2>
