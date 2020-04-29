@@ -4,15 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bake</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css" />
+    
+    
 </head>
 <body>
+        <header>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg px-4">
+            <a href="" class="navbar-brand" href="#"><img src="images/logo.svg" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav">
+                <span class="toggler-icon"><i class="fas fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myNav">
+                <ul class="navbar-nav mx-auto text-capitalize">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Store</a>
+                    </li>
+                </ul>
+                <div class="nav-info-items d-none d-lg-flex">
+                    <div class="nav-info align-items-center d-flex justify-content-between mx-lg-5">
+                        <span class="info-icon mx-lg-3"><i class="fas fa-phone"></i></span>
+                        <p class="mb-0">+ 123 456 7890</p>
+                    </div>
+                    <div id="cart-info" class="nav-info align-items-center cart-info d-flex justify-content-between mx-lg-5">
+                        <span class="cart-info_icon mr-lg-3"><i class="fas fa-shopping-cart"></i></span>
+                        <p class="mb-0 text-capitalize"><span id="item-count">2 </span>items - $ <span class="item-total">10.49</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--End Nav-->
+
+
+
     <section class="container content-section">
         <h2 class="section-header">Music</h2>
         <div class="shop-items">
             <% items.music.forEach((item) => { %>
                 <div class="shop-item" data-item-id="<%= item.id %>">
                     <span class="shop-item-title"><%= item.name %></span>
+                    <span class="shop-item-title"><%= item.description %></span>
                     <img class="shop-item-image" src="Images/<%= item.imgName %>">
                     <div class="shop-item-details">
                         <span class="shop-item-price">$<%= item.price / 100 %></span>

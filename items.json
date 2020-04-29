@@ -2,27 +2,31 @@
     "music": [
         {
             "id": 1,
-            "name": "Album 11",
-            "price": 1299,
-            "imgName": "Album 1.png"
+            "name": "Tre leches",
+            "price": 3099,
+            "imgName": "Album 1.png",
+            "description": "test"
         },
         {
             "id": 2,
             "name": "Album 2",
             "price": 1499,
-            "imgName": "Album 2.png"
+            "imgName": "Album 2.png",
+            "description": "test"
         },
         {
             "id": 3,
             "name": "Album 3",
             "price": 999,
-            "imgName": "Album 3.png"
+            "imgName": "Album 3.png",
+            "description": "test"
         },
         {
             "id": 4,
             "name": "Album 4",
             "price": 1999,
-            "imgName": "Album 4.png"
+            "imgName": "Album 4.png",
+            "description": "test"
         }
     ],
     "merch": [
