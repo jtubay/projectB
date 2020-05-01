@@ -27,6 +27,20 @@
             "price": 1999,
             "imgName": "image10.jpeg",
             "description": "test"
+        },
+        {
+            "id": 5,
+            "name": "Album 4",
+            "price": 2999,
+            "imgName": "image10.jpeg",
+            "description": "test"
+        },
+        {
+            "id": 6,
+            "name": "Album 4",
+            "price": 3999,
+            "imgName": "image10.jpeg",
+            "description": "test"
         }
     ],
     "merch": [
