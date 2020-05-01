@@ -1,68 +1,72 @@
+:root {
+    --mainPink: #ef7998;
+    --mainYellow: rgb(249, 228, 148);
+    --mainWhite: #fff;
+    --mainBlack: #000;
+    --yellowTrans: rgba(249, 228, 148, 0.5)!important;
+    --mainGrey: rgb(238, 238, 238);
+}
+
 body {
     font-family: "Kaushan Script", cursive;
-    background: var(--mainWhite);
-    color: var(--mainBlack);
 }
 .navbar-toggler {
 outline: none !important;
 }
 .toggler-icon {
 font-size: 2.5rem;
-color: var(--mainPink);
+color: var(--mainPink)!important;
 }
 .nav-link {
-color: var(--mainPink);
+color: var(--mainPink)!important;
 font-size: 1.5rem;
 transition: all 0.5s ease-in-out;
 }
 .nav-link:hover {
-color: var(--mainBlack);
+color: var(--mainBlack)!important;
 }
 .cart-info__icon {
-    color: var(--mainBlack);
+    color: var(--mainBlack)!important;
     cursor: pointer;
  }
   
 .cart-info {
-border: 0.1rem solid black;
+border: 0.1rem solid var(--mainBlack)!important;
 color: black;
 border-radius: 0.25rem;
 padding: 0.4rem 0.6rem;
 cursor: pointer;
 }
 .cart-info:hover {
-background: pink;
-border-color: pink;
-color: white;
+background: var(--mainPink)!important;
+border-color: var(--mainPink)!important;
+color: var(--mainWhite)!important;
 }
 .cart-info:hover .cart-info__icon {
-color: white;
+color: var(--mainWhite)!important;
 }
 /* end of info icons */
 /* banner */
 
-.max-height {
-min-height: calc(100vh - 76px);
-background: linear-gradient(var(--yellowTrans), var(--yellowTrans)),
-    url("../img/headerBcg.jpeg") center/cover fixed no-repeat;
-position: relative;
-}
 .banner {
-color: var(--mainWhite);
+color: var(--mainWhite)!important;
 margin-top: -4rem;
 }
 .banner-title {
-color: var(--mainPink);
+color: var(--mainPink)!important;
 font-size: 4rem;
 }
 .banner-link {
 font-size: 1.5rem;
-color: var(--mainBlack);
-border: 0.2rem solid var(--mainBlack);
+color: var(--mainBlack)!important;
+border: 0.2rem solid var(--mainBlack)!important;
 }
 .banner-link:hover {
-background: var(--mainBlack);
-color: var(--mainPink);
+background: var(--mainBlack)!important;
+color: var(--mainPink)!important;
+}
+.hide{
+display: none;
 }
 /* endo of banner */
 /* cart  */
@@ -89,12 +93,12 @@ transition: all 2s ease-in-out;
 /* end of cart */
 /* cart item */
 .cart-item-remove {
-color: var(--mainPink);
+color: pink;
 transition: all 1s ease-in-out;
 }
 .cart-item-remove:hover {
 transform: scale(1.1);
-color: var(--mainBlack);
+color: pink;
 }
 #cart-item-price {
 font-size: 0.8rem;
@@ -102,20 +106,20 @@ font-size: 0.8rem;
 /* cart item */
 /* cart buttons */
 .btn-pink {
-color: var(--mainPink) !important;
-border-color: var(--mainPink) !important;
+color: pink !important;
+border-color: pink !important;
 }
 .btn-black {
-color: var(--mainBlack) !important;
-border-color: var(--mainBlack) !important;
+color: pink !important;
+border-color: pink !important;
 }
 .btn-black:hover {
-color: var(--mainPink) !important;
-background: var(--mainBlack) !important;
+color: pink !important;
+background: pink !important;
 }
 .btn-pink:hover {
-background: var(--mainPink) !important;
-color: var(--mainBlack) !important;
+background: pink !important;
+color: pink !important;
 }
 /* end of cart buttons */
 
@@ -131,7 +135,7 @@ top: -1.5rem;
 left: -1.7rem;
 width: 100%;
 height: 100%;
-outline: 0.5rem solid var(--mainYellow);
+outline: 0.5rem solid var(--mainYellow)!important;
 z-index: -1;
 transition: all 1s ease-in-out;
 }
@@ -141,6 +145,13 @@ left: 0;
 }
 
 /*end of  about */
+
+.max-height {
+    min-height: calc(100vh - 76px);
+    
+    background: linear-gradient(var(--yellowTrans), var(--yellowTrans)), url('./Images/image8.jpeg') center/cover fixed no-repeat;
+    position: relative;
+  }
 
 
 

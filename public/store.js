@@ -2,6 +2,8 @@
 const removeCartItemButtons = document.getElementsByClassName('btn-danger');
 const quantityInputs = document.getElementsByClassName('btn-danger');
 const addToCartBtn = document.getElementsByClassName('shop-item-button');
+const show = document.getElementById('testCart')
+const shop = document.getElementById('shop');
 
 
 const stripeHandler = StripeCheckout.configure({
@@ -113,6 +115,10 @@ const addToCartClicked = e =>{
     const id = shopItem.dataset.itemId
     addItemToCart(title, price, imageSrc, id)
     updateCartTotal()
+
+    //show hide
+    shop.classList.add('hide')
+    show.classList.remove("hide")
 }
 
 
