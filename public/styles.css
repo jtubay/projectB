@@ -1,14 +1,76 @@
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+
+body{
+    font-family: "Kaushan Script", cursive;
+    background-color: rgb(241, 238, 238);
+
+}
+nav a{
+    color:rgb(255, 108, 223);
+}
+nav{
+    background-color: rgb(255, 255, 255)!important;
+    position: fixed;
+    box-shadow: 0 1.5px 0px 0px rgba(0, 0, 0, 0.15);
+}
+.about{
+    background: rgb(255, 255, 255);
+    height: 30rem;
+}
 .landing{
     height: 100vh;
     width: 100%;
     background:black;
 }
-.content-wrapper {
-    background-color: rgb(238, 238, 238);
-    width: 100%!important;
-    height: 63rem!important;
+.btn-2{
+    background: transparent!important;
+    border: 1px solid black!important;
+    color:black!important;
+    padding: .5rem 1rem .5rem 1rem;
+    border-radius: .2rem;
+    transition: 200ms ease;
 }
-
+.btn-2:hover{
+    background: black!important;
+    color:rgb(255, 108, 223)!important;
+}
+.btn-2 a:hover{
+    text-decoration: none!important;
+}
+.content-wrapper {
+    background-color: rgb(241, 238, 238);
+    width: 100%!important;
+    height: 86rem!important;
+}
+.shop-item-details{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: .8rem;
+}
+.shop-item-title, .shop-item-price{
+    padding-top: .3rem;
+    font-size:1.2rem;
+}
+.shop-item-description{
+    font-size: 1.5rem;
+}
+.btn{
+    background: rgb(255, 108, 223)!important;
+    border:rgb(255, 108, 223)!important;
+}
+.btn:hover{
+    background: rgb(216, 89, 188)!important;
+    border:rgb(216, 89, 188)!important;
+}
+.color-text{
+    color:rgb(255, 108, 223);
+}
+.section-header{
+    font-size: 3rem;
+    padding-top: 3rem;
+}
 .btn-danger {
     color: white;
     background-color: #EB5757;
@@ -44,7 +106,8 @@
     background-color:rgb(255, 255, 255);
     width: 24rem;
     height: 23rem;
-    margin-top: 5rem;
+    margin-top: 3rem;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 .shop-items{
@@ -58,4 +121,9 @@
 
 .wrapper{
     width: 100%;
+}
+
+.footer{
+    height: 20rem;
+    background-color: white;
 }
