@@ -2,12 +2,22 @@
 
 body{
     font-family: "Kaushan Script", cursive;
-    background-color: rgb(241, 238, 238);
+    background-color: rgb(241, 241, 241)!important;
 
 }
 nav a{
     color:rgb(255, 108, 223);
 }
+/*
+.landing{
+    background: url('./Images/cake-12.jpg')!important;
+    background-position: center!important;
+    background-size: contain!important;
+    background-attachment: fixed!important;
+    height: 100vh;
+    width: 100%;
+}
+*/
 nav{
     background-color: rgb(255, 255, 255)!important;
     position: fixed;
@@ -23,7 +33,7 @@ nav{
     background:black;
 }
 .btn-2{
-    background: transparent!important;
+    background: white!important;
     border: 1px solid black!important;
     color:black!important;
     padding: .5rem 1rem .5rem 1rem;
@@ -38,7 +48,7 @@ nav{
     text-decoration: none!important;
 }
 .content-wrapper {
-    background-color: rgb(241, 238, 238);
+    background-color: rgb(241, 241, 241)!important;
     width: 100%!important;
     height: 86rem!important;
 }
@@ -109,7 +119,7 @@ nav{
     width: 24rem;
     height: 23rem;
     margin-top: 3rem;
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: .5px 1px 1px .5px rgba(0, 0, 0, 0.2);
 }
 
 .shop-items{
