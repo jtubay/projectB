@@ -147,11 +147,15 @@ left: 0;
 /*end of  about */
 
 .max-height {
-    min-height: calc(100vh - 76px);
+    min-height: 40rem;
     
-    background: linear-gradient(var(--yellowTrans), var(--yellowTrans)), url('./Images/image8.jpeg') center/cover fixed no-repeat;
-    position: relative;
-  }
+    background: linear-gradient(var(--yellowTrans), var(--yellowTrans)), url('./Images/bakebread.jpg')center/cover fixed no-repeat;
+    
+}
+.baker{
+    height: 3rem;
+    width: 3rem;
+}
 
 
 
