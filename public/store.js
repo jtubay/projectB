@@ -149,3 +149,9 @@ const updateCartTotal = () => {
     document.getElementsByClassName('cart-total-price')[0].innerText = `$ ${total}`;
 
 }
+const cartInfor = document.getElementById('cart-info');
+const cart = document.getElementById('cart');
+
+cartInfor.addEventListener('click', () => {
+    cart.classList.toggle('show-cart');
+})
