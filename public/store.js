@@ -147,6 +147,7 @@ const updateCartTotal = () => {
     }
     total = Math.round(total * 100) / 100;
     document.getElementsByClassName('cart-total-price')[0].innerText = `$ ${total}`;
+    document.getElementById('cart-total').innerText = `$ ${total}`
 
 }
 const cartInfor = document.getElementById('cart-info');
