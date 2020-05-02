@@ -111,6 +111,7 @@ const addToCartClicked = e =>{
     const title = shopItem.getElementsByClassName('shop-item-title')[0].innerText;
     const price = shopItem.getElementsByClassName('shop-item-price')[0].innerText;
     const imageSrc = shopItem.getElementsByClassName('shop-item-image')[0].src;
+    console.log(title)
     
     const id = shopItem.dataset.itemId
     addItemToCart(title, price, imageSrc, id)

@@ -9,35 +9,35 @@
         },
         {
             "id": 2,
-            "name": "Album 2",
+            "name": "cup cake",
             "price": 1499,
             "imgName": "image7.jpeg",
             "description": "test"
         },
         {
             "id": 3,
-            "name": "Album 3",
+            "name": "cup",
             "price": 999,
             "imgName": "image3.jpeg",
             "description": "test"
         },
         {
             "id": 4,
-            "name": "Album 4",
+            "name": "cake",
             "price": 1999,
             "imgName": "image10.jpeg",
             "description": "test"
         },
         {
             "id": 5,
-            "name": "Album 4",
+            "name": "cup",
             "price": 2999,
             "imgName": "image10.jpeg",
             "description": "test"
         },
         {
             "id": 6,
-            "name": "Album 4",
+            "name": "cake",
             "price": 3999,
             "imgName": "image10.jpeg",
             "description": "test"
