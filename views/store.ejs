@@ -17,7 +17,7 @@
     <header>
         <!--Navbar-->
         <nav class="navbar navbar-expand-lg px-4">
-            <a href="" class="navbar-brand" href="#"><img class="baker" src="Images/chef.png" alt=""></a>
+            <a href="" class="navbar-brand" href="#"><img class="baker" src="Images/ch.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav">
                 <span class="toggler-icon"><i class="fas fa-bars"></i></span>
             </button>
@@ -59,42 +59,36 @@
                 <div id="cart" class="cart">
                     <!--Cart item-->
                     <div class="cart-item d-flex justify-content-between text-capitalize my-3">
-                        <img src="./img-cart/cake-2.jpeg" alt="" class="img-fluid rounded-circle" id="item-img">
-                        <div class="item-text">
-                            <p id="cart-item-title" class="font-weight-bold mb0">Cart item</p>
-                            <span>$</span>
-                            <span id="cart-item-price" class="cart-item-price mb-0">10.99</span>
-                        </div>
-                        <a href="#" class="cart-item-remove">
-                            <i class="fas fa-trash"></i>
-                        </a>
+
+                        <section class="container content-section">
+                                <h2 class="section-header">CART</h2>
+                                <div class="cart-row">
+                                    <span class="cart-item cart-header cart-column">ITEM</span>
+                                    <span class="cart-price cart-header cart-column">PRICE</span>
+                                    <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                                </div>
+                                <div class="cart-items">
+                                </div>
+   
+                        </section>
+
                     </div>
                     <!--end of cart item-->
 
                     <!--cart item-->
-                    <div class="cart-item d-flex justify-content-between text-capitalize my-3">
-                        <img src="./img-cart/doughnut-2.jpeg" alt="" class="img-fluid rounded-circle" id="item-img">
-                        <div class="cart-item-text">
-                            <p id="cart-item-title" class="font-weight-bold mb-0">Cart item</p>
-                            <span>$</span>
-                            <span id="cart-item-price" class="cart-item-price mb-0">10.99</span>
-                        </div>
-                        <a href="#" id="cart-item-remove" class="cart-item-remove">
-                            <i class="fas fa-trash"></i>
-                        </a>
-                    </div>
+
                     <!--End of cart item-->
 
                     <!--cart total-->
                     <div class="cart-total-container d-flex justify-content-around text-capitalize mt-5">
                         <h5>total</h5>
-                        <h5><strong id="cart-total" class="font-weight-bold"></strong> </h5>
+                        <h5><strong id="cart-total" class="font-weight-bold cart-total-title"></strong> </h5>
                     </div>
                     <!--end cart total-->
                     <!--cart buttons-->
                     <div class="cart-buttons-container mt-3 d-flex justify-content-between">
-                        <a href="#" id="clear-cart" class="btn btn-outline-secondary btn-black text-uppercase">clear cart</a>
-                        <a href="#" class="btn btn-outline-secondary text-uppercase btn-pink">checkout</a>
+
+                        <a href="#" class="btn btn-outline-secondary text-uppercase btn-pink btn-purchase">checkout</a>
                       </div>
                     <!--end of  cart buttons -->
 

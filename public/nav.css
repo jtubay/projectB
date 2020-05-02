@@ -9,7 +9,10 @@
 
 body {
     font-family: "Kaushan Script", cursive;
+    background: var(--mainWhite);
+    color: var(--mainBlack);
 }
+
 .navbar-toggler {
 outline: none !important;
 }
@@ -28,7 +31,8 @@ color: var(--mainBlack)!important;
 .cart-info__icon {
     color: var(--mainBlack)!important;
     cursor: pointer;
- }
+}
+
   
 .cart-info {
 border: 0.1rem solid var(--mainBlack)!important;
