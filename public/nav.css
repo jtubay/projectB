@@ -1,5 +1,5 @@
 :root {
-    --mainPink: #ef7998;
+    --mainPink: #ff65ad;
     --mainYellow: rgb(249, 228, 148);
     --mainWhite: #fff;
     --mainBlack: #000;
@@ -110,16 +110,16 @@ font-size: 0.8rem;
 /* cart item */
 /* cart buttons */
 .btn-pink {
-color: pink !important;
-border-color: pink !important;
+color: #ff65ad !important;
+border-color: #ff65ad !important;
 }
 .btn-black {
-color: pink !important;
-border-color: pink !important;
+    color: #ff65ad !important;
+    border-color: #ff65ad !important;
 }
 .btn-black:hover {
-color: pink !important;
-background: pink !important;
+color: black !important;
+background: #ff65ad !important;
 }
 .btn-pink:hover {
 background: pink !important;
@@ -152,9 +152,18 @@ left: 0;
 
 .max-height {
     min-height: 40rem;
-    
-    background: linear-gradient(var(--yellowTrans), var(--yellowTrans)), url('./Images/bakebread.jpg')center/cover fixed no-repeat;
-    
+    background-image: 
+    /* top, transparent red */
+    linear-gradient(
+      rgba(0, 0, 0, 0.35), 
+      rgba(0, 0, 0, 0.35)
+    ),
+    /* your image */
+    url(./Images/headerBcg.jpeg);  
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .baker{
     height: 3rem;

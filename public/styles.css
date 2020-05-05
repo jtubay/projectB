@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body{
     font-family: "Kaushan Script", cursive;
@@ -6,7 +7,7 @@ body{
 
 }
 nav a{
-    color:rgb(255, 108, 223);
+    color:#ff65ad;
 }
 /*
 .landing{
@@ -43,7 +44,7 @@ nav{
 }
 .btn-2:hover{
     background: black!important;
-    color:rgb(255, 108, 223)!important;
+    color:#ff65ad!important;
 }
 .btn-2 a:hover{
     text-decoration: none!important;
@@ -51,7 +52,7 @@ nav{
 .content-wrapper {
     background-color: rgb(241, 241, 241)!important;
     width: 100%!important;
-    height: 86rem!important;
+    height: 51rem!important;
 }
 .shop-item-details{
     display: flex;
@@ -68,15 +69,15 @@ nav{
     font-size: 1.5rem;
 }
 .btn{
-    background: rgb(255, 108, 223)!important;
-    border:rgb(255, 108, 223)!important;
+    background: #ff65ad!important;
+    border:#ff65ad!important;
 }
 .btn:hover{
-    background: rgb(216, 89, 188)!important;
-    border:rgb(216, 89, 188)!important;
+    background: #ff65ad!important;
+    border:#ff65ad!important;
 }
 .color-text{
-    color:rgb(255, 108, 223);
+    color:#ff65ad;
 }
 .section-header{
     font-size: 3rem;
@@ -84,21 +85,21 @@ nav{
 }
 .btn-danger {
     color: white;
-    background-color: #EB5757;
+    background-color: rgb(235, 208, 87);
     border: none;
     border-radius: .3em;
     font-weight: bold;
 }
-
+/*f5e68f*/
 .btn-danger:hover {
-    background-color: #CC4C4C;
+    background-color: rgb(235, 208, 87);
 }
 
 .item-overlay{
     background-color: black;
     position: absolute;
-    width: 24rem;
-    height: 19rem;
+    width: 20rem;
+    height: 15rem;
     opacity: 0;
     color:white;
     transition: 200ms ease-in-out all;
@@ -110,15 +111,15 @@ nav{
     opacity: .6;
 }
 .shop-item-image{
-    height: 19rem;
-    width: 24rem;
+    height: 15rem;
+    width: 20rem;
 }
 
 
 .shop-item{
     background-color:rgb(255, 255, 255);
-    width: 24rem;
-    height: 23rem;
+    width: 20rem;
+    height: 19rem;
     margin-top: 3rem;
     box-shadow: .5px 1px 1px .5px rgba(0, 0, 0, 0.2);
 }
@@ -136,7 +137,81 @@ nav{
     width: 100%;
 }
 
+
+.about-img-container{
+    height: 20rem!important;
+    width: 300rem!important;
+}
+
+.img{
+    height: 50rem!important;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+}
+.img-1{
+    width: 50%;
+    background-image: 
+    /* top, transparent red */
+    linear-gradient(
+      rgba(0, 0, 0, 0.45), 
+      rgba(0, 0, 0, 0.45)
+    ),
+    /* your image */
+    url(./Images/cake-12.jpg);
+    height: 50rem!important;
+}
+.img-2{
+    background-image: 
+    /* top, transparent red */
+    linear-gradient(
+      rgba(0, 0, 0, 0.45), 
+      rgba(0, 0, 0, 0.45)
+    ),
+    /* your image */
+    url(./Images/cake-12.jpg);    height: 25rem!important;
+}
+.img-3{
+    background-image: 
+    /* top, transparent red */
+    linear-gradient(
+      rgba(0, 0, 0, 0.45), 
+      rgba(0, 0, 0, 0.45)
+    ),
+    /* your image */
+    url(./Images/cake-12.jpg);    height: 25rem!important;
+}
+
+.img-col{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-2{
+    display: flex;
+    justify-content: center;
+}
+.img-info{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color: #ffdcec!important;
+}
+.gallery-title{
+    color: #ffb6d8!important;
+}
+
+.img-text{
+    color: #ffb6d8!important;
+}
 .footer{
-    height: 20rem;
-    background-color: white;
+    height: 25rem;
+    background: rgb(41, 41, 41);
+}
+.order-section{
+    margin-bottom: 9rem!important;
+}
+
+.section-sub{
+    color:rgb(48, 48, 48);
 }
