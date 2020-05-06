@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bake</title>
     <link rel="stylesheet" href="">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="all.css" />
@@ -53,8 +55,12 @@
         <div class="container-fluid">
             <div class="row max-height justify-content-center align-items-center">
                 <div class="col-10 mx-auto banner text-center">
-                    <h1 class="text-capitalize">Welcome to <strong class="banner-title">MaCali's</strong></h1>
-                    <a href="#" class="btn banner-link text-uppercase my-2">Explore</a>
+                    <h1 
+                    data-aos="zoom-in" data-aos-duration="800"
+                    class="text-capitalize">Welcome to <strong class="banner-title">MaCali's</strong></h1>
+                    <a 
+                    data-aos="zoom-out" data-aos-duration="800" data-aos-offset="250"
+                    href="#" class="btn banner-link text-uppercase my-2">Explore</a>
                 </div>
                 <!--cart-->
                 <div id="cart" class="cart">
@@ -108,7 +114,8 @@
         <div class="container">
     
           <div class="row">
-            <div class="col-10 mx-auto col-md-6 my-5">
+            <div class="col-10 mx-auto col-md-6 my-5"
+            data-aos="flip-up">
               <h1 class="text-capitalize">about <strong><span class="color-text">us</span></strong></h1>
               <p class="my-4 text-muted w-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, aliquam voluptas
                 beatae vitae expedita consectetur nesciunt quia deserunt asperiores facere fuga dicta fugiat corrupti et omnis
@@ -117,7 +124,9 @@
     
             </div>
             <div class="col-10 mx-auto col-md-4 align-self-center my-5">
-              <div class="about-img-container">
+              <div class="about-img-container"
+              data-aos="fade" data-aos-duration="1600"
+              >
                 <img src="Images/Album 1.png" class="img-fluid" alt="">
               </div>
             </div>
@@ -127,20 +136,29 @@
 <!--Gallery Section-->
 <div class="img">
     <div class="img-1 text-left">
-        <div class="col-1 mx-auto col-md-10 my-5">
+        <div
+        data-aos="fade" data-aos-duration="600" 
+        class="col-1 mx-auto col-md-10 my-5">
             <h1 class="text-left img-text">Hi Im Maria</h1>
             <p class="img-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nesciunt nobis illum rerum similique incidunt, ducimus vero adipisci tempore provident facere, voluptates aliquam doloremque maiores asperiores placeat quo error quibusdam.s</p>
             <br>
-            <p class="img-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nesciunt nobis illum rerum similique incidunt, ducimus vero adipisci tempore provident facere, voluptates aliquam doloremque maiores asperiores placeat quo error quibusdam.s</p>
-            <p class="img-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nesciunt nobis illum rerum similique incidunt, ducimus vero adipisci tempore provident facere, voluptates aliquam doloremque maiores asperiores placeat quo error quibusdam.s</p>
-        </div>
+            <p class="img-info-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nesciunt nobis illum rerum similique incidunt, ducimus vero adipisci tempore provident facere, voluptates aliquam doloremque maiores asperiores placeat quo error quibusdam.s</p>
+            <p class="img-info-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nesciunt nobis illum rerum similique incidunt, ducimus vero adipisci tempore provident facere, voluptates aliquam doloremque maiores asperiores placeat quo error quibusdam.s</p>
+            <br>
+            <div class="left-text">
+                <p class="img-info-sub text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nesciunt nobis illum rerum similique incidunt, ducimus vero adipisci tempore provident facere, voluptates aliquam doloremque maiores asperiores placeat quo error quibusdam.s</p>
+            </div>
+        </div
+        >
     </div>
     <div class="img-col">
-        <div class="img-2">
-            <div class="col-1 mx-auto col-md-10 my-5">
+        <div class="img-2 d-flex">
+            <div 
+            data-aos="fade" data-aos-duration="800"
+            class="justify-content-center align-self-center">
                 <h1 class="text-center gallery-title">View Gallery</h1>
                 <svg
-                class="col-1 mx-auto col-md-12 my-1" 
+                class="col-1 mx-auto col-md-12 my-1 gallery-button" 
                 xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                     width="150" height="150"
                     viewBox="0 0 172 172"
@@ -148,18 +166,31 @@
                     >
             </div>
         </div>
-        <div class="img-3">
+        <div class="img-3 d-flex">
+            <div 
+            data-aos="fade" data-aos-duration="1000"
+            class="img-box justify-content-center align-self-center">
+                <h1 class="text-center img-box-text">Fresh and high- quality baked goods year-round.
+                </h1>
+            </div>
         </div>
     </div>
 </div>
       <!--Order Section-->
     <section class="container order-section content-section content-wrapper">
             <div class="text-center">
-                <h2 class="section-header">Our <span class="color-text"> Store</span></h2>
-                <h4 class="section-sub">Choose from our vast menu</h4>
+                <h2 
+                data-aos="fade" data-aos-duration="600" 
+                data-aos-easing="ease-out-cubic"
+                class="section-header">Our <span class="color-text"> Store</span></h2>
+                <h4 
+                data-aos="zoom-in" data-aos-duration="1000" 
+                class="section-sub">Choose from our vast menu</h4>
             </div>
             <div class="wrapper">
-                <div class="shop-items">
+                <div
+                data-aos="fade" data-aos-duration="1200" 
+                class="shop-items">
                     <% items.music.forEach((item) => { %>
                         <div class="shop-item" data-item-id="<%= item.id %>">
                             <div class="item-overlay">
@@ -173,18 +204,78 @@
                             </div>
                         </div>
                     <%})%>
-                </div>
+                </div
+                >
             </div>
         </section>
 
     
      <!--Footer-->
-        <div class="footer">
+     <footer class="footer-distributed">
+     
+                 <div class="footer-left">
+     
+                     <h3>Company<span>logo</span></h3>
+     
+                     <p class="footer-links">
+                         <a href="#" class="link-1">Home</a>
+                         
+                         <a href="#">About</a>
+                     
+                         <a href="#">Order</a>
+                     </p>
+     
+                     <p class="footer-company-name">Company Name © 2015</p>
+                 </div>
+     
+                 <div class="footer-center">
+     
+                     <div>
+                         <i class="fa fa-map-marker"></i>
+                         <p><span>14307 Tapestry Woods CT</span> Charlotte, North Carolina</p>
+                     </div>
+     
+                     <div>
+                         <i class="fa fa-phone"></i>
+                         <p>+1.555.555.5555</p>
+                     </div>
+     
+                     <div>
+                         <i class="fa fa-envelope"></i>
+                         <p><a href="mailto:support@company.com">support@company.com</a></p>
+                     </div>
+     
+                 </div>
+     
+                 <div class="footer-right">
+     
+                     <p class="footer-company-about">
+                         <span>Maria and Cali</span>
+                         Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+                     </p>
+     
+                     <div class="footer-icons">
+     
+                         <a href="#"><i class="fa fa-envelope"></i></a>
+                         <a href="#"><i class="fa fa-envelope"></i></a>
+                         <a href="#"><i class="fa fa-envelope"></i></a>
+                         <a href="#"><i class="fa fa-envelope"></i></a>
+     
+                     </div>
+     
+                 </div>
+     
+             </footer>
 
-        </div>
           <script src="https://checkout.stripe.com/checkout.js"></script>
         <script>
             const stripePublicKey = '<%= stripePublicKey %>'
+        </script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration : 2000,
+            })
         </script>
         <script src="store.js"></script>
 </body>

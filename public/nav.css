@@ -151,7 +151,7 @@ left: 0;
 /*end of  about */
 
 .max-height {
-    min-height: 40rem;
+    height: 100vh;
     background-image: 
     /* top, transparent red */
     linear-gradient(
