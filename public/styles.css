@@ -49,6 +49,16 @@ nav{
 .btn-2 a:hover{
     text-decoration: none!important;
 }
+.btn-clear{
+    background:transparent!important;
+    position: relative;
+    left: 28px;
+    transition: 200ms ease all;
+    border-radius: 50%;
+}
+.btn-clear:hover{
+    background:rgba(8, 8, 8, 0.23)!important;
+}
 .content-wrapper {
     background-color: rgb(241, 241, 241)!important;
     width: 100%!important;
@@ -546,5 +556,5 @@ nav{
 
 .gallery-button{
     position: relative;
-    left: 28px;
+    left: 40px!important;
 }
