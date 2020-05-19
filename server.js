@@ -66,4 +66,4 @@ app.post('/purchase', (req, res) => {
 
 
 
-app.listen(PORT, () => console.log(`SERVER STARTED AT https://localhost:${PORT}/store`))
+app.listen(PORT, () => console.log(`SERVER STARTED AT http://localhost:${PORT}/store`))
