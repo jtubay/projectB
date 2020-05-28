@@ -1,6 +1,8 @@
 :root {
     --mainPink: #ff65ad;
-    --mainYellow: rgb(249, 228, 148);
+    --mainYellow: #FFD100;
+    --mainBlue:#0072CE;
+    --mainRed:#EF3340;
     --mainWhite: #fff;
     --mainBlack: #000;
     --yellowTrans: rgba(249, 228, 148, 0.5)!important;
@@ -18,7 +20,7 @@ outline: none !important;
 }
 .toggler-icon {
 font-size: 2.5rem;
-color: var(--mainPink)!important;
+color: var(--mainYellow)!important;
 }
 .nav-link {
 color: var(--mainPink)!important;
@@ -26,10 +28,10 @@ font-size: 1.5rem;
 transition: all 0.5s ease-in-out;
 }
 .nav-link:hover {
-color: var(--mainBlack)!important;
+color: var(--mainRed)!important;
 }
 .cart-info__icon {
-    color: var(--mainBlack)!important;
+    color: var(--mainRed)!important;
     cursor: pointer;
 }
 
@@ -42,9 +44,9 @@ padding: 0.4rem 0.6rem;
 cursor: pointer;
 }
 .cart-info:hover {
-background: var(--mainPink)!important;
-border-color: var(--mainPink)!important;
-color: var(--mainWhite)!important;
+background: var(--mainRed)!important;
+border-color: var(--mainBlue)!important;
+color: var(--mainYellow)!important;
 }
 .cart-info:hover .cart-info__icon {
 color: var(--mainWhite)!important;
@@ -57,17 +59,22 @@ color: var(--mainWhite)!important;
 margin-top: -4rem;
 }
 .banner-title {
-color: var(--mainPink)!important;
+color: var(--mainYellow)!important;
 font-size: 4rem;
+}
+.bt2{
+    color: var(--mainBlue);
+    font-size: 4rem;
 }
 .banner-link {
 font-size: 1.5rem;
-color: var(--mainBlack)!important;
-border: 0.2rem solid var(--mainBlack)!important;
+color: var(--mainWhite)!important;
+border: 0.2rem solid none!important;
+
 }
 .banner-link:hover {
-background: var(--mainBlack)!important;
-color: var(--mainPink)!important;
+background: var(--mainYellow)!important;
+color: var(--mainBlue)!important;
 }
 .hide{
 display: none;
@@ -159,7 +166,7 @@ left: 0;
       rgba(0, 0, 0, 0.35)
     ),
     /* your image */
-    url(./Images/headerBcg.jpeg);  
+    url(./Images/BeFunky-collage.jpg);  
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
