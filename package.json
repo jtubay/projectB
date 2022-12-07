@@ -20,7 +20,7 @@
   "homepage": "https://github.com/jtubay/projectB#readme",
   "dependencies": {
     "ejs": "^3.1.2",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "stripe": "^8.48.0"
   },
   "devDependencies": {
